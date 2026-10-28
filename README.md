@@ -173,7 +173,5 @@ python -m unittest discover -s tests -v
 | `puzzle15.py` | 状态校验、可解性判断、A* 搜索及路径回溯 |
 | `heuristics.py` | 三种启发函数及 Walking Distance 抽象表 |
 | `examples/default.json` | 图片对应的默认输入示例 |
-| `tests/test_solver.py` | 算法正确性验证 |
-| `tests/test_cli.py` | 输入与导出验证 |
 | `results/default_solution.json` | 默认棋盘的实际求解数据 |
 | `results/default_solution.txt` | 默认棋盘的完整求解过程 |
