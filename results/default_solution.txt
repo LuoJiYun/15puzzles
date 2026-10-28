@@ -1,0 +1,276 @@
+15-puzzle | A* search
+Heuristic: walking-distance
+Initial board:
+11  9  4 15
+ 1  3  . 12
+ 7  5  8  6
+13  2 10 14
+Goal board:
+ 1  2  3  4
+ 5  6  7  8
+ 9 10 11 12
+13 14 15  .
+Status: solved
+Optimal moves: 41
+Moves (blank direction): L U L D R R D R U U L L D D L U R D D R R U U L L D R R U L U L D D D R U U R D D
+Initial h: 33
+Expanded: 6349
+Generated successors: 20667
+Discovered states: 13755
+Reopened states: 0
+Peak heap entries: 7594
+Elapsed: 0.366842 s (including heuristic setup)
+
+Solution path:
+Step 0: initial board
+11  9  4 15
+ 1  3  . 12
+ 7  5  8  6
+13  2 10 14
+
+Step 1: blank L, slide tile 3
+11  9  4 15
+ 1  .  3 12
+ 7  5  8  6
+13  2 10 14
+
+Step 2: blank U, slide tile 9
+11  .  4 15
+ 1  9  3 12
+ 7  5  8  6
+13  2 10 14
+
+Step 3: blank L, slide tile 11
+ . 11  4 15
+ 1  9  3 12
+ 7  5  8  6
+13  2 10 14
+
+Step 4: blank D, slide tile 1
+ 1 11  4 15
+ .  9  3 12
+ 7  5  8  6
+13  2 10 14
+
+Step 5: blank R, slide tile 9
+ 1 11  4 15
+ 9  .  3 12
+ 7  5  8  6
+13  2 10 14
+
+Step 6: blank R, slide tile 3
+ 1 11  4 15
+ 9  3  . 12
+ 7  5  8  6
+13  2 10 14
+
+Step 7: blank D, slide tile 8
+ 1 11  4 15
+ 9  3  8 12
+ 7  5  .  6
+13  2 10 14
+
+Step 8: blank R, slide tile 6
+ 1 11  4 15
+ 9  3  8 12
+ 7  5  6  .
+13  2 10 14
+
+Step 9: blank U, slide tile 12
+ 1 11  4 15
+ 9  3  8  .
+ 7  5  6 12
+13  2 10 14
+
+Step 10: blank U, slide tile 15
+ 1 11  4  .
+ 9  3  8 15
+ 7  5  6 12
+13  2 10 14
+
+Step 11: blank L, slide tile 4
+ 1 11  .  4
+ 9  3  8 15
+ 7  5  6 12
+13  2 10 14
+
+Step 12: blank L, slide tile 11
+ 1  . 11  4
+ 9  3  8 15
+ 7  5  6 12
+13  2 10 14
+
+Step 13: blank D, slide tile 3
+ 1  3 11  4
+ 9  .  8 15
+ 7  5  6 12
+13  2 10 14
+
+Step 14: blank D, slide tile 5
+ 1  3 11  4
+ 9  5  8 15
+ 7  .  6 12
+13  2 10 14
+
+Step 15: blank L, slide tile 7
+ 1  3 11  4
+ 9  5  8 15
+ .  7  6 12
+13  2 10 14
+
+Step 16: blank U, slide tile 9
+ 1  3 11  4
+ .  5  8 15
+ 9  7  6 12
+13  2 10 14
+
+Step 17: blank R, slide tile 5
+ 1  3 11  4
+ 5  .  8 15
+ 9  7  6 12
+13  2 10 14
+
+Step 18: blank D, slide tile 7
+ 1  3 11  4
+ 5  7  8 15
+ 9  .  6 12
+13  2 10 14
+
+Step 19: blank D, slide tile 2
+ 1  3 11  4
+ 5  7  8 15
+ 9  2  6 12
+13  . 10 14
+
+Step 20: blank R, slide tile 10
+ 1  3 11  4
+ 5  7  8 15
+ 9  2  6 12
+13 10  . 14
+
+Step 21: blank R, slide tile 14
+ 1  3 11  4
+ 5  7  8 15
+ 9  2  6 12
+13 10 14  .
+
+Step 22: blank U, slide tile 12
+ 1  3 11  4
+ 5  7  8 15
+ 9  2  6  .
+13 10 14 12
+
+Step 23: blank U, slide tile 15
+ 1  3 11  4
+ 5  7  8  .
+ 9  2  6 15
+13 10 14 12
+
+Step 24: blank L, slide tile 8
+ 1  3 11  4
+ 5  7  .  8
+ 9  2  6 15
+13 10 14 12
+
+Step 25: blank L, slide tile 7
+ 1  3 11  4
+ 5  .  7  8
+ 9  2  6 15
+13 10 14 12
+
+Step 26: blank D, slide tile 2
+ 1  3 11  4
+ 5  2  7  8
+ 9  .  6 15
+13 10 14 12
+
+Step 27: blank R, slide tile 6
+ 1  3 11  4
+ 5  2  7  8
+ 9  6  . 15
+13 10 14 12
+
+Step 28: blank R, slide tile 15
+ 1  3 11  4
+ 5  2  7  8
+ 9  6 15  .
+13 10 14 12
+
+Step 29: blank U, slide tile 8
+ 1  3 11  4
+ 5  2  7  .
+ 9  6 15  8
+13 10 14 12
+
+Step 30: blank L, slide tile 7
+ 1  3 11  4
+ 5  2  .  7
+ 9  6 15  8
+13 10 14 12
+
+Step 31: blank U, slide tile 11
+ 1  3  .  4
+ 5  2 11  7
+ 9  6 15  8
+13 10 14 12
+
+Step 32: blank L, slide tile 3
+ 1  .  3  4
+ 5  2 11  7
+ 9  6 15  8
+13 10 14 12
+
+Step 33: blank D, slide tile 2
+ 1  2  3  4
+ 5  . 11  7
+ 9  6 15  8
+13 10 14 12
+
+Step 34: blank D, slide tile 6
+ 1  2  3  4
+ 5  6 11  7
+ 9  . 15  8
+13 10 14 12
+
+Step 35: blank D, slide tile 10
+ 1  2  3  4
+ 5  6 11  7
+ 9 10 15  8
+13  . 14 12
+
+Step 36: blank R, slide tile 14
+ 1  2  3  4
+ 5  6 11  7
+ 9 10 15  8
+13 14  . 12
+
+Step 37: blank U, slide tile 15
+ 1  2  3  4
+ 5  6 11  7
+ 9 10  .  8
+13 14 15 12
+
+Step 38: blank U, slide tile 11
+ 1  2  3  4
+ 5  6  .  7
+ 9 10 11  8
+13 14 15 12
+
+Step 39: blank R, slide tile 7
+ 1  2  3  4
+ 5  6  7  .
+ 9 10 11  8
+13 14 15 12
+
+Step 40: blank D, slide tile 8
+ 1  2  3  4
+ 5  6  7  8
+ 9 10 11  .
+13 14 15 12
+
+Step 41: blank D, slide tile 12
+ 1  2  3  4
+ 5  6  7  8
+ 9 10 11 12
+13 14 15  .
+

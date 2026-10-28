@@ -1,0 +1,2451 @@
+{
+  "schema_version": 1,
+  "experiment_local_datetime": "2026-10-18T16:23:10.409201+08:00",
+  "environment": {
+    "python_version": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+    "python_implementation": "CPython",
+    "executable": "D:\\APP\\Python\\python.exe",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "system": "Windows",
+    "release": "11",
+    "machine": "AMD64",
+    "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "processor_identifier_environment": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "logical_cpu_count": 8
+  },
+  "protocol": {
+    "runs_per_heuristic": 5,
+    "fresh_child_process_each_run": true,
+    "walking_distance_cache_cold_at_each_solve": true,
+    "execution_mode": "sequential isolated child processes",
+    "order_random_seed": 20261018,
+    "execution_order": [
+      "walking-distance",
+      "linear-conflict",
+      "manhattan",
+      "walking-distance",
+      "linear-conflict",
+      "manhattan",
+      "linear-conflict",
+      "manhattan",
+      "walking-distance",
+      "linear-conflict",
+      "walking-distance",
+      "manhattan",
+      "manhattan",
+      "linear-conflict",
+      "walking-distance"
+    ],
+    "timing": "SearchResult.elapsed includes validation, heuristic setup, search and reconstruction; excludes interpreter startup and imports. child_process_wall_seconds includes process overhead.",
+    "default_start": [
+      11,
+      9,
+      4,
+      15,
+      1,
+      3,
+      0,
+      12,
+      7,
+      5,
+      8,
+      6,
+      13,
+      2,
+      10,
+      14
+    ],
+    "default_goal": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      0
+    ],
+    "production_source_sha256": {
+      "puzzle15.py": "587123c127811a93c0cb5d743f08bdd4a8216fc2d8290cb7bb8ab2c8e08bd3d0",
+      "heuristics.py": "b0a0882939945ebb8464081e5c1cf60c1293804d1747c81cc2c6aca5557924ea",
+      "main.py": "78b5cbd6d6175524536dcb1c41bece66f5c4c5ad799dbe7ec8ad5287741cb88b"
+    }
+  },
+  "default_benchmark_raw": [
+    {
+      "round": 1,
+      "execution_index": 1,
+      "heuristic": "walking-distance",
+      "status": "solved",
+      "cost": 41,
+      "statistics": {
+        "initial_h": 33,
+        "expanded": 6349,
+        "generated": 20667,
+        "discovered": 13755,
+        "reopened": 0,
+        "frontier_peak": 7594,
+        "elapsed_seconds": 0.11472870002035052
+      },
+      "moves": [
+        "L",
+        "U",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "L",
+        "U",
+        "R",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "U",
+        "U",
+        "R",
+        "D",
+        "D"
+      ],
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 41
+      },
+      "child_process_wall_seconds": 0.2921566999866627
+    },
+    {
+      "round": 1,
+      "execution_index": 2,
+      "heuristic": "linear-conflict",
+      "status": "solved",
+      "cost": 41,
+      "statistics": {
+        "initial_h": 33,
+        "expanded": 11351,
+        "generated": 34775,
+        "discovered": 22205,
+        "reopened": 0,
+        "frontier_peak": 11275,
+        "elapsed_seconds": 0.22884299998986535
+      },
+      "moves": [
+        "L",
+        "U",
+        "L",
+        "D",
+        "R",
+        "D",
+        "L",
+        "U",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "U",
+        "U",
+        "R",
+        "D",
+        "D"
+      ],
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 41
+      },
+      "child_process_wall_seconds": 0.3891575000016019
+    },
+    {
+      "round": 1,
+      "execution_index": 3,
+      "heuristic": "manhattan",
+      "status": "solved",
+      "cost": 41,
+      "statistics": {
+        "initial_h": 33,
+        "expanded": 25179,
+        "generated": 77258,
+        "discovered": 49474,
+        "reopened": 0,
+        "frontier_peak": 25158,
+        "elapsed_seconds": 0.16828890002216212
+      },
+      "moves": [
+        "L",
+        "U",
+        "L",
+        "D",
+        "R",
+        "D",
+        "L",
+        "U",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "U",
+        "U",
+        "R",
+        "D",
+        "D"
+      ],
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 41
+      },
+      "child_process_wall_seconds": 0.3334647000010591
+    },
+    {
+      "round": 2,
+      "execution_index": 4,
+      "heuristic": "walking-distance",
+      "status": "solved",
+      "cost": 41,
+      "statistics": {
+        "initial_h": 33,
+        "expanded": 6349,
+        "generated": 20667,
+        "discovered": 13755,
+        "reopened": 0,
+        "frontier_peak": 7594,
+        "elapsed_seconds": 0.10382140000001527
+      },
+      "moves": [
+        "L",
+        "U",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "L",
+        "U",
+        "R",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "U",
+        "U",
+        "R",
+        "D",
+        "D"
+      ],
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 41
+      },
+      "child_process_wall_seconds": 0.26481299998704344
+    },
+    {
+      "round": 2,
+      "execution_index": 5,
+      "heuristic": "linear-conflict",
+      "status": "solved",
+      "cost": 41,
+      "statistics": {
+        "initial_h": 33,
+        "expanded": 11351,
+        "generated": 34775,
+        "discovered": 22205,
+        "reopened": 0,
+        "frontier_peak": 11275,
+        "elapsed_seconds": 0.21277300000656396
+      },
+      "moves": [
+        "L",
+        "U",
+        "L",
+        "D",
+        "R",
+        "D",
+        "L",
+        "U",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "U",
+        "U",
+        "R",
+        "D",
+        "D"
+      ],
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 41
+      },
+      "child_process_wall_seconds": 0.3593098999990616
+    },
+    {
+      "round": 2,
+      "execution_index": 6,
+      "heuristic": "manhattan",
+      "status": "solved",
+      "cost": 41,
+      "statistics": {
+        "initial_h": 33,
+        "expanded": 25179,
+        "generated": 77258,
+        "discovered": 49474,
+        "reopened": 0,
+        "frontier_peak": 25158,
+        "elapsed_seconds": 0.1761096000263933
+      },
+      "moves": [
+        "L",
+        "U",
+        "L",
+        "D",
+        "R",
+        "D",
+        "L",
+        "U",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "U",
+        "U",
+        "R",
+        "D",
+        "D"
+      ],
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 41
+      },
+      "child_process_wall_seconds": 0.331287799985148
+    },
+    {
+      "round": 3,
+      "execution_index": 7,
+      "heuristic": "linear-conflict",
+      "status": "solved",
+      "cost": 41,
+      "statistics": {
+        "initial_h": 33,
+        "expanded": 11351,
+        "generated": 34775,
+        "discovered": 22205,
+        "reopened": 0,
+        "frontier_peak": 11275,
+        "elapsed_seconds": 0.22434469999279827
+      },
+      "moves": [
+        "L",
+        "U",
+        "L",
+        "D",
+        "R",
+        "D",
+        "L",
+        "U",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "U",
+        "U",
+        "R",
+        "D",
+        "D"
+      ],
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 41
+      },
+      "child_process_wall_seconds": 0.38454810000257567
+    },
+    {
+      "round": 3,
+      "execution_index": 8,
+      "heuristic": "manhattan",
+      "status": "solved",
+      "cost": 41,
+      "statistics": {
+        "initial_h": 33,
+        "expanded": 25179,
+        "generated": 77258,
+        "discovered": 49474,
+        "reopened": 0,
+        "frontier_peak": 25158,
+        "elapsed_seconds": 0.17585619998862967
+      },
+      "moves": [
+        "L",
+        "U",
+        "L",
+        "D",
+        "R",
+        "D",
+        "L",
+        "U",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "U",
+        "U",
+        "R",
+        "D",
+        "D"
+      ],
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 41
+      },
+      "child_process_wall_seconds": 0.3373095999995712
+    },
+    {
+      "round": 3,
+      "execution_index": 9,
+      "heuristic": "walking-distance",
+      "status": "solved",
+      "cost": 41,
+      "statistics": {
+        "initial_h": 33,
+        "expanded": 6349,
+        "generated": 20667,
+        "discovered": 13755,
+        "reopened": 0,
+        "frontier_peak": 7594,
+        "elapsed_seconds": 0.10487109998939559
+      },
+      "moves": [
+        "L",
+        "U",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "L",
+        "U",
+        "R",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "U",
+        "U",
+        "R",
+        "D",
+        "D"
+      ],
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 41
+      },
+      "child_process_wall_seconds": 0.2508097999962047
+    },
+    {
+      "round": 4,
+      "execution_index": 10,
+      "heuristic": "linear-conflict",
+      "status": "solved",
+      "cost": 41,
+      "statistics": {
+        "initial_h": 33,
+        "expanded": 11351,
+        "generated": 34775,
+        "discovered": 22205,
+        "reopened": 0,
+        "frontier_peak": 11275,
+        "elapsed_seconds": 0.22016910000820644
+      },
+      "moves": [
+        "L",
+        "U",
+        "L",
+        "D",
+        "R",
+        "D",
+        "L",
+        "U",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "U",
+        "U",
+        "R",
+        "D",
+        "D"
+      ],
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 41
+      },
+      "child_process_wall_seconds": 0.3729033999843523
+    },
+    {
+      "round": 4,
+      "execution_index": 11,
+      "heuristic": "walking-distance",
+      "status": "solved",
+      "cost": 41,
+      "statistics": {
+        "initial_h": 33,
+        "expanded": 6349,
+        "generated": 20667,
+        "discovered": 13755,
+        "reopened": 0,
+        "frontier_peak": 7594,
+        "elapsed_seconds": 0.1018525000254158
+      },
+      "moves": [
+        "L",
+        "U",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "L",
+        "U",
+        "R",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "U",
+        "U",
+        "R",
+        "D",
+        "D"
+      ],
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 41
+      },
+      "child_process_wall_seconds": 0.24736909999046475
+    },
+    {
+      "round": 4,
+      "execution_index": 12,
+      "heuristic": "manhattan",
+      "status": "solved",
+      "cost": 41,
+      "statistics": {
+        "initial_h": 33,
+        "expanded": 25179,
+        "generated": 77258,
+        "discovered": 49474,
+        "reopened": 0,
+        "frontier_peak": 25158,
+        "elapsed_seconds": 0.1668999000103213
+      },
+      "moves": [
+        "L",
+        "U",
+        "L",
+        "D",
+        "R",
+        "D",
+        "L",
+        "U",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "U",
+        "U",
+        "R",
+        "D",
+        "D"
+      ],
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 41
+      },
+      "child_process_wall_seconds": 0.3140465000178665
+    },
+    {
+      "round": 5,
+      "execution_index": 13,
+      "heuristic": "manhattan",
+      "status": "solved",
+      "cost": 41,
+      "statistics": {
+        "initial_h": 33,
+        "expanded": 25179,
+        "generated": 77258,
+        "discovered": 49474,
+        "reopened": 0,
+        "frontier_peak": 25158,
+        "elapsed_seconds": 0.17026360001182184
+      },
+      "moves": [
+        "L",
+        "U",
+        "L",
+        "D",
+        "R",
+        "D",
+        "L",
+        "U",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "U",
+        "U",
+        "R",
+        "D",
+        "D"
+      ],
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 41
+      },
+      "child_process_wall_seconds": 0.32116989998030476
+    },
+    {
+      "round": 5,
+      "execution_index": 14,
+      "heuristic": "linear-conflict",
+      "status": "solved",
+      "cost": 41,
+      "statistics": {
+        "initial_h": 33,
+        "expanded": 11351,
+        "generated": 34775,
+        "discovered": 22205,
+        "reopened": 0,
+        "frontier_peak": 11275,
+        "elapsed_seconds": 0.21092039998620749
+      },
+      "moves": [
+        "L",
+        "U",
+        "L",
+        "D",
+        "R",
+        "D",
+        "L",
+        "U",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "U",
+        "U",
+        "R",
+        "D",
+        "D"
+      ],
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 41
+      },
+      "child_process_wall_seconds": 0.3538898999977391
+    },
+    {
+      "round": 5,
+      "execution_index": 15,
+      "heuristic": "walking-distance",
+      "status": "solved",
+      "cost": 41,
+      "statistics": {
+        "initial_h": 33,
+        "expanded": 6349,
+        "generated": 20667,
+        "discovered": 13755,
+        "reopened": 0,
+        "frontier_peak": 7594,
+        "elapsed_seconds": 0.10182999999960884
+      },
+      "moves": [
+        "L",
+        "U",
+        "L",
+        "D",
+        "R",
+        "R",
+        "D",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "D",
+        "L",
+        "U",
+        "R",
+        "D",
+        "D",
+        "R",
+        "R",
+        "U",
+        "U",
+        "L",
+        "L",
+        "D",
+        "R",
+        "R",
+        "U",
+        "L",
+        "U",
+        "L",
+        "D",
+        "D",
+        "D",
+        "R",
+        "U",
+        "U",
+        "R",
+        "D",
+        "D"
+      ],
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 41
+      },
+      "child_process_wall_seconds": 0.24985220000962727
+    }
+  ],
+  "default_benchmark_summary": {
+    "manhattan": {
+      "runs": 5,
+      "status": "solved",
+      "cost": 41,
+      "fixed_statistics": {
+        "initial_h": 33,
+        "expanded": 25179,
+        "generated": 77258,
+        "discovered": 49474,
+        "reopened": 0,
+        "frontier_peak": 25158
+      },
+      "elapsed_seconds_raw": [
+        0.16828890002216212,
+        0.1761096000263933,
+        0.17585619998862967,
+        0.1668999000103213,
+        0.17026360001182184
+      ],
+      "elapsed_seconds_median": 0.17026360001182184,
+      "elapsed_seconds_min": 0.1668999000103213,
+      "elapsed_seconds_max": 0.1761096000263933
+    },
+    "linear-conflict": {
+      "runs": 5,
+      "status": "solved",
+      "cost": 41,
+      "fixed_statistics": {
+        "initial_h": 33,
+        "expanded": 11351,
+        "generated": 34775,
+        "discovered": 22205,
+        "reopened": 0,
+        "frontier_peak": 11275
+      },
+      "elapsed_seconds_raw": [
+        0.22884299998986535,
+        0.21277300000656396,
+        0.22434469999279827,
+        0.22016910000820644,
+        0.21092039998620749
+      ],
+      "elapsed_seconds_median": 0.22016910000820644,
+      "elapsed_seconds_min": 0.21092039998620749,
+      "elapsed_seconds_max": 0.22884299998986535
+    },
+    "walking-distance": {
+      "runs": 5,
+      "status": "solved",
+      "cost": 41,
+      "fixed_statistics": {
+        "initial_h": 33,
+        "expanded": 6349,
+        "generated": 20667,
+        "discovered": 13755,
+        "reopened": 0,
+        "frontier_peak": 7594
+      },
+      "elapsed_seconds_raw": [
+        0.11472870002035052,
+        0.10382140000001527,
+        0.10487109998939559,
+        0.1018525000254158,
+        0.10182999999960884
+      ],
+      "elapsed_seconds_median": 0.10382140000001527,
+      "elapsed_seconds_min": 0.10182999999960884,
+      "elapsed_seconds_max": 0.11472870002035052
+    }
+  },
+  "manhattan_to_walking_distance": {
+    "expansion_ratio": 3.965821389195149,
+    "expansion_reduction_fraction": 0.7478454267445094,
+    "median_time_ratio": 1.6399663269017446
+  },
+  "saved_default_artifact": {
+    "path": "results/default_solution.json",
+    "sha256": "953f988f59b77d6cc6a1f3dff625beebd1c7f13440b5bd430cef5e5b9f61c20e",
+    "status": "solved",
+    "cost": 41,
+    "heuristic": "walking-distance",
+    "statistics": {
+      "initial_h": 33,
+      "expanded": 6349,
+      "generated": 20667,
+      "discovered": 13755,
+      "reopened": 0,
+      "frontier_peak": 7594,
+      "elapsed_seconds": 0.1016552000073716
+    },
+    "moves": [
+      "L",
+      "U",
+      "L",
+      "D",
+      "R",
+      "R",
+      "D",
+      "R",
+      "U",
+      "U",
+      "L",
+      "L",
+      "D",
+      "D",
+      "L",
+      "U",
+      "R",
+      "D",
+      "D",
+      "R",
+      "R",
+      "U",
+      "U",
+      "L",
+      "L",
+      "D",
+      "R",
+      "R",
+      "U",
+      "L",
+      "U",
+      "L",
+      "D",
+      "D",
+      "D",
+      "R",
+      "U",
+      "U",
+      "R",
+      "D",
+      "D"
+    ],
+    "selected_path_boards": {
+      "0": [
+        [
+          11,
+          9,
+          4,
+          15
+        ],
+        [
+          1,
+          3,
+          0,
+          12
+        ],
+        [
+          7,
+          5,
+          8,
+          6
+        ],
+        [
+          13,
+          2,
+          10,
+          14
+        ]
+      ],
+      "10": [
+        [
+          1,
+          11,
+          4,
+          0
+        ],
+        [
+          9,
+          3,
+          8,
+          15
+        ],
+        [
+          7,
+          5,
+          6,
+          12
+        ],
+        [
+          13,
+          2,
+          10,
+          14
+        ]
+      ],
+      "20": [
+        [
+          1,
+          3,
+          11,
+          4
+        ],
+        [
+          5,
+          7,
+          8,
+          15
+        ],
+        [
+          9,
+          2,
+          6,
+          12
+        ],
+        [
+          13,
+          10,
+          0,
+          14
+        ]
+      ],
+      "30": [
+        [
+          1,
+          3,
+          11,
+          4
+        ],
+        [
+          5,
+          2,
+          0,
+          7
+        ],
+        [
+          9,
+          6,
+          15,
+          8
+        ],
+        [
+          13,
+          10,
+          14,
+          12
+        ]
+      ],
+      "41": [
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        [
+          5,
+          6,
+          7,
+          8
+        ],
+        [
+          9,
+          10,
+          11,
+          12
+        ],
+        [
+          13,
+          14,
+          15,
+          0
+        ]
+      ]
+    },
+    "untouched_after_experiments": true,
+    "verification": {
+      "solved_path_checked": true,
+      "transitions_checked": 41
+    }
+  },
+  "edge_case_runs": [
+    {
+      "case": "initial_equals_goal",
+      "input": {
+        "start": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          0
+        ],
+        "goal": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          0
+        ],
+        "max_nodes": 0,
+        "timeout": 0
+      },
+      "result": {
+        "algorithm": "A*",
+        "status": "solved",
+        "heuristic": "walking-distance",
+        "start": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            9,
+            10,
+            11,
+            12
+          ],
+          [
+            13,
+            14,
+            15,
+            0
+          ]
+        ],
+        "goal": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            9,
+            10,
+            11,
+            12
+          ],
+          [
+            13,
+            14,
+            15,
+            0
+          ]
+        ],
+        "cost": 0,
+        "move_convention": "U/D/L/R indicate the blank moving up/down/left/right",
+        "moves": [],
+        "path": [
+          [
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              9,
+              10,
+              11,
+              12
+            ],
+            [
+              13,
+              14,
+              15,
+              0
+            ]
+          ]
+        ],
+        "statistics": {
+          "initial_h": 0,
+          "expanded": 0,
+          "generated": 0,
+          "discovered": 1,
+          "reopened": 0,
+          "frontier_peak": 1,
+          "elapsed_seconds": 3.090000245720148e-05
+        }
+      },
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 0
+      },
+      "child_process_wall_seconds": 0.14684400000260212
+    },
+    {
+      "case": "one_move",
+      "input": {
+        "start": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          0,
+          13,
+          14,
+          15,
+          12
+        ],
+        "goal": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          0
+        ]
+      },
+      "result": {
+        "algorithm": "A*",
+        "status": "solved",
+        "heuristic": "walking-distance",
+        "start": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            9,
+            10,
+            11,
+            0
+          ],
+          [
+            13,
+            14,
+            15,
+            12
+          ]
+        ],
+        "goal": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            9,
+            10,
+            11,
+            12
+          ],
+          [
+            13,
+            14,
+            15,
+            0
+          ]
+        ],
+        "cost": 1,
+        "move_convention": "U/D/L/R indicate the blank moving up/down/left/right",
+        "moves": [
+          "D"
+        ],
+        "path": [
+          [
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              9,
+              10,
+              11,
+              0
+            ],
+            [
+              13,
+              14,
+              15,
+              12
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              9,
+              10,
+              11,
+              12
+            ],
+            [
+              13,
+              14,
+              15,
+              0
+            ]
+          ]
+        ],
+        "statistics": {
+          "initial_h": 1,
+          "expanded": 1,
+          "generated": 3,
+          "discovered": 4,
+          "reopened": 0,
+          "frontier_peak": 3,
+          "elapsed_seconds": 0.04782929999055341
+        }
+      },
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 1
+      },
+      "child_process_wall_seconds": 0.20120670000324026
+    },
+    {
+      "case": "unsolvable_swap_1_2",
+      "input": {
+        "start": [
+          2,
+          1,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          0
+        ],
+        "goal": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          0
+        ]
+      },
+      "result": {
+        "algorithm": "A*",
+        "status": "unsolvable",
+        "heuristic": "walking-distance",
+        "start": [
+          [
+            2,
+            1,
+            3,
+            4
+          ],
+          [
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            9,
+            10,
+            11,
+            12
+          ],
+          [
+            13,
+            14,
+            15,
+            0
+          ]
+        ],
+        "goal": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            9,
+            10,
+            11,
+            12
+          ],
+          [
+            13,
+            14,
+            15,
+            0
+          ]
+        ],
+        "cost": null,
+        "move_convention": "U/D/L/R indicate the blank moving up/down/left/right",
+        "moves": [],
+        "path": [],
+        "statistics": {
+          "initial_h": null,
+          "expanded": 0,
+          "generated": 0,
+          "discovered": 0,
+          "reopened": 0,
+          "frontier_peak": 0,
+          "elapsed_seconds": 5.4100004490464926e-05
+        }
+      },
+      "verification": {
+        "solved_path_checked": false,
+        "empty_failure_path": true
+      },
+      "child_process_wall_seconds": 0.1999560999975074
+    },
+    {
+      "case": "arbitrary_interior_blank_goal",
+      "input": {
+        "start": [
+          0,
+          6,
+          11,
+          15,
+          9,
+          2,
+          3,
+          8,
+          7,
+          1,
+          4,
+          12,
+          5,
+          10,
+          14,
+          13
+        ],
+        "goal": [
+          6,
+          2,
+          11,
+          15,
+          9,
+          0,
+          3,
+          8,
+          7,
+          1,
+          4,
+          12,
+          5,
+          10,
+          14,
+          13
+        ]
+      },
+      "result": {
+        "algorithm": "A*",
+        "status": "solved",
+        "heuristic": "walking-distance",
+        "start": [
+          [
+            0,
+            6,
+            11,
+            15
+          ],
+          [
+            9,
+            2,
+            3,
+            8
+          ],
+          [
+            7,
+            1,
+            4,
+            12
+          ],
+          [
+            5,
+            10,
+            14,
+            13
+          ]
+        ],
+        "goal": [
+          [
+            6,
+            2,
+            11,
+            15
+          ],
+          [
+            9,
+            0,
+            3,
+            8
+          ],
+          [
+            7,
+            1,
+            4,
+            12
+          ],
+          [
+            5,
+            10,
+            14,
+            13
+          ]
+        ],
+        "cost": 2,
+        "move_convention": "U/D/L/R indicate the blank moving up/down/left/right",
+        "moves": [
+          "R",
+          "D"
+        ],
+        "path": [
+          [
+            [
+              0,
+              6,
+              11,
+              15
+            ],
+            [
+              9,
+              2,
+              3,
+              8
+            ],
+            [
+              7,
+              1,
+              4,
+              12
+            ],
+            [
+              5,
+              10,
+              14,
+              13
+            ]
+          ],
+          [
+            [
+              6,
+              0,
+              11,
+              15
+            ],
+            [
+              9,
+              2,
+              3,
+              8
+            ],
+            [
+              7,
+              1,
+              4,
+              12
+            ],
+            [
+              5,
+              10,
+              14,
+              13
+            ]
+          ],
+          [
+            [
+              6,
+              2,
+              11,
+              15
+            ],
+            [
+              9,
+              0,
+              3,
+              8
+            ],
+            [
+              7,
+              1,
+              4,
+              12
+            ],
+            [
+              5,
+              10,
+              14,
+              13
+            ]
+          ]
+        ],
+        "statistics": {
+          "initial_h": 2,
+          "expanded": 2,
+          "generated": 5,
+          "discovered": 5,
+          "reopened": 0,
+          "frontier_peak": 3,
+          "elapsed_seconds": 0.1024496000027284
+        }
+      },
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 2
+      },
+      "child_process_wall_seconds": 0.4072520000045188
+    },
+    {
+      "case": "node_limit_0",
+      "input": {
+        "max_nodes": 0
+      },
+      "result": {
+        "algorithm": "A*",
+        "status": "node_limit",
+        "heuristic": "walking-distance",
+        "start": [
+          [
+            11,
+            9,
+            4,
+            15
+          ],
+          [
+            1,
+            3,
+            0,
+            12
+          ],
+          [
+            7,
+            5,
+            8,
+            6
+          ],
+          [
+            13,
+            2,
+            10,
+            14
+          ]
+        ],
+        "goal": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            9,
+            10,
+            11,
+            12
+          ],
+          [
+            13,
+            14,
+            15,
+            0
+          ]
+        ],
+        "cost": null,
+        "move_convention": "U/D/L/R indicate the blank moving up/down/left/right",
+        "moves": [],
+        "path": [],
+        "statistics": {
+          "initial_h": 33,
+          "expanded": 0,
+          "generated": 0,
+          "discovered": 1,
+          "reopened": 0,
+          "frontier_peak": 1,
+          "elapsed_seconds": 0.11286039999686182
+        }
+      },
+      "verification": {
+        "solved_path_checked": false,
+        "empty_failure_path": true
+      },
+      "child_process_wall_seconds": 0.5177738000056706
+    },
+    {
+      "case": "node_limit_1",
+      "input": {
+        "max_nodes": 1
+      },
+      "result": {
+        "algorithm": "A*",
+        "status": "node_limit",
+        "heuristic": "walking-distance",
+        "start": [
+          [
+            11,
+            9,
+            4,
+            15
+          ],
+          [
+            1,
+            3,
+            0,
+            12
+          ],
+          [
+            7,
+            5,
+            8,
+            6
+          ],
+          [
+            13,
+            2,
+            10,
+            14
+          ]
+        ],
+        "goal": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            9,
+            10,
+            11,
+            12
+          ],
+          [
+            13,
+            14,
+            15,
+            0
+          ]
+        ],
+        "cost": null,
+        "move_convention": "U/D/L/R indicate the blank moving up/down/left/right",
+        "moves": [],
+        "path": [],
+        "statistics": {
+          "initial_h": 33,
+          "expanded": 1,
+          "generated": 4,
+          "discovered": 5,
+          "reopened": 0,
+          "frontier_peak": 4,
+          "elapsed_seconds": 0.09181859999080189
+        }
+      },
+      "verification": {
+        "solved_path_checked": false,
+        "empty_failure_path": true
+      },
+      "child_process_wall_seconds": 0.3764406999980565
+    },
+    {
+      "case": "timeout_0",
+      "input": {
+        "timeout": 0
+      },
+      "result": {
+        "algorithm": "A*",
+        "status": "timeout",
+        "heuristic": "walking-distance",
+        "start": [
+          [
+            11,
+            9,
+            4,
+            15
+          ],
+          [
+            1,
+            3,
+            0,
+            12
+          ],
+          [
+            7,
+            5,
+            8,
+            6
+          ],
+          [
+            13,
+            2,
+            10,
+            14
+          ]
+        ],
+        "goal": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            9,
+            10,
+            11,
+            12
+          ],
+          [
+            13,
+            14,
+            15,
+            0
+          ]
+        ],
+        "cost": null,
+        "move_convention": "U/D/L/R indicate the blank moving up/down/left/right",
+        "moves": [],
+        "path": [],
+        "statistics": {
+          "initial_h": 33,
+          "expanded": 0,
+          "generated": 0,
+          "discovered": 1,
+          "reopened": 0,
+          "frontier_peak": 1,
+          "elapsed_seconds": 0.10947769999620505
+        }
+      },
+      "verification": {
+        "solved_path_checked": false,
+        "empty_failure_path": true
+      },
+      "child_process_wall_seconds": 0.38067809998756275
+    },
+    {
+      "case": "examples_problem2",
+      "input": {
+        "start": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          0,
+          13,
+          14,
+          15,
+          12
+        ],
+        "goal": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          0
+        ],
+        "timeout": 3,
+        "max_nodes": 100000
+      },
+      "result": {
+        "algorithm": "A*",
+        "status": "solved",
+        "heuristic": "walking-distance",
+        "start": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            9,
+            10,
+            11,
+            0
+          ],
+          [
+            13,
+            14,
+            15,
+            12
+          ]
+        ],
+        "goal": [
+          [
+            1,
+            2,
+            3,
+            4
+          ],
+          [
+            5,
+            6,
+            7,
+            8
+          ],
+          [
+            9,
+            10,
+            11,
+            12
+          ],
+          [
+            13,
+            14,
+            15,
+            0
+          ]
+        ],
+        "cost": 1,
+        "move_convention": "U/D/L/R indicate the blank moving up/down/left/right",
+        "moves": [
+          "D"
+        ],
+        "path": [
+          [
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              9,
+              10,
+              11,
+              0
+            ],
+            [
+              13,
+              14,
+              15,
+              12
+            ]
+          ],
+          [
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            [
+              5,
+              6,
+              7,
+              8
+            ],
+            [
+              9,
+              10,
+              11,
+              12
+            ],
+            [
+              13,
+              14,
+              15,
+              0
+            ]
+          ]
+        ],
+        "statistics": {
+          "initial_h": 1,
+          "expanded": 1,
+          "generated": 3,
+          "discovered": 4,
+          "reopened": 0,
+          "frontier_peak": 3,
+          "elapsed_seconds": 0.052929700003005564
+        }
+      },
+      "verification": {
+        "solved_path_checked": true,
+        "transitions_checked": 1
+      },
+      "child_process_wall_seconds": 0.22509950000676326
+    }
+  ],
+  "unittest": {
+    "command": "python -m unittest discover -s tests -v",
+    "returncode": 0,
+    "process_wall_seconds": 0.6087091999943368,
+    "stdout": "",
+    "stderr": "test_board_separators (test_cli.CliTests.test_board_separators) ... ok\ntest_command_line_overrides_json (test_cli.CliTests.test_command_line_overrides_json) ... ok\ntest_conflicting_output_paths (test_cli.CliTests.test_conflicting_output_paths) ... ok\ntest_custom_boards_and_summary (test_cli.CliTests.test_custom_boards_and_summary) ... ok\ntest_interactive_conflicts_are_rejected (test_cli.CliTests.test_interactive_conflicts_are_rejected) ... ok\ntest_interactive_input (test_cli.CliTests.test_interactive_input) ... ok\ntest_invalid_input_returns_error (test_cli.CliTests.test_invalid_input_returns_error) ... ok\ntest_invalid_json_returns_error (test_cli.CliTests.test_invalid_json_returns_error) ... ok\ntest_nested_json_and_both_exports (test_cli.CliTests.test_nested_json_and_both_exports) ... ok\ntest_protect_input_from_overwrite (test_cli.CliTests.test_protect_input_from_overwrite) ... ok\ntest_unsolvable_has_no_claimed_solution (test_cli.CliTests.test_unsolvable_has_no_claimed_solution) ... ok\ntest_defaults_are_valid_boards (test_solver.BoardValidationTests.test_defaults_are_valid_boards) ... ok\ntest_invalid_boards_are_rejected (test_solver.BoardValidationTests.test_invalid_boards_are_rejected) ... ok\ntest_list_is_normalized_to_tuple (test_solver.BoardValidationTests.test_list_is_normalized_to_tuple) ... ok\ntest_admissibility_against_exact_bfs_distances (test_solver.HeuristicTests.test_admissibility_against_exact_bfs_distances) ... ok\ntest_goal_specific_heuristics_can_coexist (test_solver.HeuristicTests.test_goal_specific_heuristics_can_coexist) ... ok\ntest_default_image_has_optimal_41_move_solution (test_solver.SearchTests.test_default_image_has_optimal_41_move_solution) ... ok\ntest_goal_already_reached_ignores_resource_limits (test_solver.SearchTests.test_goal_already_reached_ignores_resource_limits) ... ok\ntest_invalid_search_parameters_are_rejected (test_solver.SearchTests.test_invalid_search_parameters_are_rejected) ... ok\ntest_node_limit_stops_search (test_solver.SearchTests.test_node_limit_stops_search) ... ok\ntest_noncanonical_goal_with_different_parity (test_solver.SearchTests.test_noncanonical_goal_with_different_parity) ... ok\ntest_optimal_solutions_against_bfs_oracle (test_solver.SearchTests.test_optimal_solutions_against_bfs_oracle) ... ok\ntest_timeout_stops_search (test_solver.SearchTests.test_timeout_stops_search) ... ok\ntest_unsolvable_board_returns_without_search (test_solver.SearchTests.test_unsolvable_board_returns_without_search) ... ok\ntest_goal_and_legal_successors_are_solvable (test_solver.SolvabilityTests.test_goal_and_legal_successors_are_solvable) ... ok\ntest_goal_parity_is_relative (test_solver.SolvabilityTests.test_goal_parity_is_relative) ... ok\ntest_swapping_two_numbered_tiles_changes_solvability (test_solver.SolvabilityTests.test_swapping_two_numbered_tiles_changes_solvability) ... ok\n\n----------------------------------------------------------------------\nRan 27 tests in 0.296s\n\nOK\n"
+  },
+  "bfs_admissibility_coverage_from_test_helpers": [
+    {
+      "goal_name": "canonical",
+      "goal": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        0
+      ],
+      "maximum_depth": 8,
+      "unique_states": 860,
+      "states_by_depth": {
+        "0": 1,
+        "1": 2,
+        "2": 4,
+        "3": 10,
+        "4": 24,
+        "5": 54,
+        "6": 107,
+        "7": 212,
+        "8": 446
+      },
+      "heuristics_checked_by_test": [
+        "manhattan",
+        "linear-conflict",
+        "walking-distance"
+      ]
+    },
+    {
+      "goal_name": "custom",
+      "goal": [
+        0,
+        6,
+        2,
+        11,
+        15,
+        9,
+        3,
+        8,
+        7,
+        1,
+        4,
+        12,
+        5,
+        10,
+        14,
+        13
+      ],
+      "maximum_depth": 8,
+      "unique_states": 860,
+      "states_by_depth": {
+        "0": 1,
+        "1": 2,
+        "2": 4,
+        "3": 10,
+        "4": 24,
+        "5": 54,
+        "6": 107,
+        "7": 212,
+        "8": 446
+      },
+      "heuristics_checked_by_test": [
+        "manhattan",
+        "linear-conflict",
+        "walking-distance"
+      ]
+    }
+  ]
+}
